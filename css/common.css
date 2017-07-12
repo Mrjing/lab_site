@@ -65,12 +65,91 @@
 
 .public-bar .secondText{
 	display: block;
-    color: #C4EAF3;
-    font-size: 12px;
-    font-style: italic;
-    margin-top: 1px;
-    margin-left: 10px;
+  color: #C4EAF3;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 1px;
+  margin-left: 10px;
 }
+
+
+.container{
+	width:1100px;
+	background: #ffffff;
+	padding:3px;
+}
+
+.container .left-navigator{
+	position: relative;
+}
+
+.container .left-navigator .topmenu
+{
+  display: block;
+  width: 150px;
+  border: 2px solid #e4393c;
+  margin: 0;
+  padding: 0;
+}
+
+.container .left-navigator .topmenu .toptitle
+{
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  font-size: 11pt;
+  font-weight: bold;
+  color: white;
+  background: #e4393c;
+  padding-left: 20px;
+	border-bottom: 2px solid #9B9090;
+}
+
+
+.container .left-navigator .topmenu li
+{
+  height: 30px;
+  line-height: 30px;
+  font-size: 11pt;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 8px;
+  z-index: 3;
+  border-bottom: 1px solid #9B9090;
+  background-image: url(../images/menu-right.gif);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container .left-navigator .topmenu li:hover
+{
+	background-color: rgb(233,239,244);
+}
+
+.container .left-navigator .topmenu li a
+{
+  text-decoration: none;
+  color: #313131;
+}
+
+.container .left-navigator .topmenu li a:hover
+{
+    font-weight: bold;
+    color: #e4393c;
+}
+
+.submenu
+{
+    /*display: none;*/
+    width: 150px;
+    left: 150px;
+    position: absolute;
+    top: 40px;
+    border: 1px solid #DDD;
+    z-index: 4;
+    background: rgb(233,239,244);
+}
+
 
 
 
