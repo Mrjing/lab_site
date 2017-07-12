@@ -1,0 +1,79 @@
+
+.public-header{
+	height:130px;
+	width:1100px;
+	background: #ffffff;
+	border-bottom: 1px solid #9B9090;
+	margin:0 auto;
+	position: relative;
+}
+
+.public-header .header-logo {
+	float:left;
+	margin: 15px 30px;
+	
+}
+
+.public-header .header-text {
+	position: relative;
+	top: 90px;
+}
+
+.public-header .header-logo a{
+	display: block;
+	width:120px;
+	height:100px;
+	background: url("../images/hust_logo.png");
+}
+
+.public-header .header-nav{
+	float:right;
+}
+
+.public-header .header-nav li{
+	font-size:20px;
+	display: inline-block;
+	position: relative;
+	top:84px;
+}
+
+.public-header .header-nav li a{
+	border-left: 1px solid #CCC;
+	padding: 0 8px;
+}
+
+.public-header .header-nav li:first-child a{
+	border-left: 0px;
+	padding: 0 8px;
+}
+
+.public-bar{
+	height:50px;
+	width:1100px;
+	background: rgb(36,147, 174);
+	margin:0 auto;
+	padding: 1px;
+}
+
+.public-bar .firstText{
+	color: #ffffff;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+.public-bar .secondText{
+	display: block;
+    color: #C4EAF3;
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 1px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
