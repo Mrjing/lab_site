@@ -1,70 +1,68 @@
-
-.public-header{
-	height:130px;
-	width:1100px;
-	background: #ffffff;
-	border-bottom: 1px solid #9B9090;
-	margin:0 auto;
-	position: relative;
+.public-header {
+  height: 130px;
+  width: 1100px;
+  background: #ffffff;
+  border-bottom: 1px solid #9B9090;
+  margin: 0 auto;
+  position: relative;
 }
 
 .public-header .header-logo {
-	float:left;
-	margin: 15px 30px;
-	
+  float: left;
+  margin: 15px 30px;
 }
 
 .public-header .header-text {
-	position: relative;
-	top: 90px;
+  position: relative;
+  top: 90px;
 }
 
-.public-header .header-logo a{
-	display: block;
-	width:120px;
-	height:100px;
-	background: url("../images/hust_logo.png");
+.public-header .header-logo a {
+  display: block;
+  width: 120px;
+  height: 100px;
+  background: url("../images/hust_logo.png");
 }
 
-.public-header .header-nav{
-	float:right;
+.public-header .header-nav {
+  float: right;
 }
 
-.public-header .header-nav li{
-	font-size:20px;
-	display: inline-block;
-	position: relative;
-	top:84px;
+.public-header .header-nav li {
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  top: 84px;
 }
 
-.public-header .header-nav li a{
-	border-left: 1px solid #CCC;
-	padding: 0 8px;
+.public-header .header-nav li a {
+  border-left: 1px solid #CCC;
+  padding: 0 8px;
 }
 
-.public-header .header-nav li:first-child a{
-	border-left: 0px;
-	padding: 0 8px;
+.public-header .header-nav li:first-child a {
+  border-left: 0px;
+  padding: 0 8px;
 }
 
-.public-bar{
-	height:50px;
-	width:1100px;
-	background: rgb(36,147, 174);
-	margin:0 auto;
-	padding: 1px;
+.public-bar {
+  height: 50px;
+  width: 1100px;
+  background: rgb(36, 147, 174);
+  margin: 0 auto;
+  padding: 1px;
 }
 
-.public-bar .firstText{
-	color: #ffffff;
-	display: block;
-	font-size: 18px;
-	font-weight: bold;
-	margin-left: 10px;
+.public-bar .firstText {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
 }
 
-.public-bar .secondText{
-	display: block;
+.public-bar .secondText {
+  display: block;
   color: #C4EAF3;
   font-size: 12px;
   font-style: italic;
@@ -72,19 +70,19 @@
   margin-left: 10px;
 }
 
-
-.container{
-	width:1100px;
-	background: #ffffff;
-	padding:3px;
+.container {
+  width: 1100px;
+  background: #ffffff;
+  padding: 3px;
+  position: relative;
 }
 
-.container .left-navigator{
-	position: relative;
+.container .left-navigator {
+  position: absolute;
+  left:3px;
 }
 
-.container .left-navigator .topmenu
-{
+.container .left-navigator .topmenu {
   display: block;
   width: 150px;
   border: 2px solid #e4393c;
@@ -92,8 +90,7 @@
   padding: 0;
 }
 
-.container .left-navigator .topmenu .toptitle
-{
+.container .left-navigator .topmenu .toptitle {
   height: 40px;
   line-height: 40px;
   text-align: left;
@@ -102,12 +99,10 @@
   color: white;
   background: #e4393c;
   padding-left: 20px;
-	border-bottom: 2px solid #9B9090;
+  border-bottom: 2px solid #9B9090;
 }
 
-
-.container .left-navigator .topmenu li
-{
+.container .left-navigator .topmenu li {
   height: 30px;
   line-height: 30px;
   font-size: 11pt;
@@ -121,43 +116,122 @@
   background-position: right;
 }
 
-.container .left-navigator .topmenu li:hover
-{
-	background-color: rgb(233,239,244);
+.container .left-navigator .topmenu li:hover {
+  background-color: rgb(233, 239, 244);
 }
 
-.container .left-navigator .topmenu li a
-{
+.container .left-navigator .topmenu li a {
   text-decoration: none;
   color: #313131;
 }
 
-.container .left-navigator .topmenu li a:hover
-{
-    font-weight: bold;
-    color: #e4393c;
+.container .left-navigator .topmenu li a:hover {
+  font-weight: bold;
+  color: #e4393c;
 }
 
-.submenu
-{
-    display: none;
-    width: 150px;
-    left: 150px;
-    position: absolute;
-    top: 40px;
-    border: 1px solid #DDD;
-    z-index: 4;
-    background: rgb(233,239,244);
-}
-
-
-.topmenu li:hover .submenu
-{
-    display: block;
+.submenu {
+  display: none;
+  width: 150px;
+  left: 150px;
+  position: absolute;
+  top: 40px;
+  border: 1px solid #DDD;
+  z-index: 4;
+  background: rgb(233, 239, 244);
 }
 
 
+.submenu dt {
+  height: 30px;
+  line-height: 30px;
+  font-size: 11pt;
+  list-style-type: none;
+  text-align: left;
+  padding-left: 8px;
+  z-index: 8;
+}
 
+.topmenu li:hover .submenu {
+  display: block;
+}
 
+.container .content {
+	width:600px;
+	margin-left: 180px; 
+	height: auto;
+	background: yellow;
+}
 
+.container .content .content-head-title {
+	font-size: 21px;
+  color: #474747;
+  font-weight: bold;
+  margin: 15px 10px;
+}
+
+.container .content .content-head-image {
+  margin-bottom: 20px;
+	width: 98%;
+  padding: 1%;
+  background: #EFEFEF;
+}
+
+.container .content .content-head-desc p{
+	margin-bottom: 20px;
+}
+
+.container .content .content-body-item {
+	
+}
+
+.content-body-item .item-title{
+	font-size: 13px;
+	border-bottom: 1px solid #ccc;
+  padding: 6px 0 2px 7px;
+}
+
+.content-body-item .item-content{
+	background: #f6f6f6;
+	padding: 10px;
+	position: relative;
+}
+
+.content-body-item .item-content p{
+	display: inline-block;
+  line-height: 20px;
+  font-size: 13px;
+  width:430px;
+  color: #474748;
+  vertical-align: top;
+	margin-right: 6px;
+}
+
+.content-body-item .item-content img{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.container .relative-link{
+	width:210px;
+	background: orange;
+	position: absolute;
+	right: 20px;
+	top: 15px;
+}
+
+.container .relative-link .link-title{
+	display: inline-block;
+	border-bottom: 2px solid #7F6633;
+	width: 100%;
+}
+
+.container .relative-link .link-list li{
+	padding-left: 15px;
+	
+	background-image: url(../images/red-arrow.png);
+  background-repeat: no-repeat;
+  background-position: left;
+}
+            
 
