@@ -140,7 +140,7 @@
 
 .submenu
 {
-    /*display: none;*/
+    display: none;
     width: 150px;
     left: 150px;
     position: absolute;
@@ -150,6 +150,11 @@
     background: rgb(233,239,244);
 }
 
+
+.topmenu li:hover .submenu
+{
+    display: block;
+}
 
 
 

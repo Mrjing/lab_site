@@ -54,7 +54,14 @@
             <li><a href="#">图片</a></li>
           </ul>
         </li>
-        <li><a href="#">新闻</a></li>
+        <li><a href="#">新闻</a>
+          <ul class="submenu">
+            <li><a href="#">新闻1</a></li>
+            <li><a href="#">新闻2</a></li>
+            <li><a href="#">新闻3</a></li>
+            <li><a href="#">新闻4</a></li>
+          </ul>
+        </li>
         <li><a href="#">仪器</a></li>
         <li><a href="#">出版物</a></li>  
         <li><a href="#">机器状态</a></li>
@@ -69,6 +76,33 @@
       
     </div>
   </div>
+  <script>
+    window.onload = function () {
+      var Lis = document.getElementsByTagName("li");
+      for (i = 0; i < Lis.length; i++) {
+          Lis[i].i = i;
+          Lis[i].onmouseover = function () {
+              this.className = "lihover";
+
+              var h0 = (this.i - 1) * 30 + 42;
+              var y = this.getElementsByTagName("div")[0].offsetHeight;
+              var h = this.getElementsByTagName("div")[0].style.top + y;
+
+              if (h < h0) {
+                  this.getElementsByTagName("div")[0].style.top = h0 + "px";
+              }
+
+              if (y > 550) {
+                  this.getElementsByTagName("div")[0].style.top = "3px";
+              }
+          }
+
+          Lis[i].onmouseout = function () {
+              this.className = "";
+          }
+      }
+    }
+  </script>
   <!-- jQuery (Bootstrap 的 JavaScript 插件需要引入 jQuery) -->
   <script src="js/jquery3.2.1.js"></script>
   <!-- 包括所有已编译的插件 -->
