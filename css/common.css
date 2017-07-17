@@ -85,7 +85,7 @@
 .container .left-navigator .topmenu {
   display: block;
   width: 150px;
-  border: 2px solid #e4393c;
+  border: 2px solid rgb(36, 147, 174);;
   margin: 0;
   padding: 0;
 }
@@ -97,7 +97,9 @@
   font-size: 11pt;
   font-weight: bold;
   color: white;
-  background: #e4393c;
+  background: rgb(36, 147, 174);;
+  
+
   padding-left: 20px;
   border-bottom: 2px solid #9B9090;
 }
@@ -160,7 +162,7 @@
 	width:600px;
 	margin-left: 180px; 
 	height: auto;
-	background: yellow;
+	/*background: yellow;*/
 }
 
 .container .content .content-head-title {
@@ -214,7 +216,7 @@
 
 .container .relative-link{
 	width:210px;
-	background: orange;
+	/*background: orange;*/
 	position: absolute;
 	right: 20px;
 	top: 15px;
@@ -235,3 +237,22 @@
 }
             
 
+.footer{
+  width:1100px;
+  margin:0 auto;
+  background: #900;
+  position: relative;
+}
+
+.footer p{
+  display: inline-block;
+  width: 400px;
+  padding: 10px;
+  color: #fff;
+}
+
+.footer img{
+  position: absolute;
+  right: 100px;
+  top:15px;
+}
